@@ -1,0 +1,58 @@
+
+body.error {
+    animation: simpleBlink 1s ease; /* Animation simple du fond en cas d'erreur */
+}
+
+@keyframes simpleBlink {
+    0% {
+        background-color: rgb(250,244,2); 
+
+    }
+    50% {
+        background-color:rgb(255, 0, 0);
+    }
+    100% {  
+        background-color: rgb(250,244,2); 
+    }
+}
+
+.error {
+    color: red;
+}
+
+.error-input {
+    border: 1px solid red;
+    background-color: red;
+    color: rgb(255, 255, 255); 
+}
+
+
+@font-face {
+	font-family: 'Glitch';
+	src: url(fonts/GlitchGoblin-2O87v.ttf)
+}
+
+header {
+    font-family: 'Glitch';
+}
+
+main {
+    font-family:'Glitch'
+}
+
+body {
+    background-color: rgb(250,244,2);
+}
+
+form {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dark-mode {
+    background-color: black;
+    color:rgb(250,244,2);
+}
+
+button{
+    cursor: pointer;
+}

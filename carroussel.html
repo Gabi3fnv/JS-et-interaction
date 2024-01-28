@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carroussel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #eee;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+      </style>
+</head>
+<body>
+    <h1> Zelda </h1>
+    <p> Une compilation d'images de la princesse zelda dans le jeu BOTW !</p>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/041a2256793d9c204e5604fbcac6668e.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/5676e023f8c7ee2ff757f02bfcf4959c.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/dcr1k75-4c187e19-ddba-4e99-8d9f-e0f321641ef1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/latest (1).png" alt=""></div>
+      <div class="swiper-slide"><img src="img/latest.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!--  carroussel fait avec Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+
+
+    <script src="carroussel.js"></script>
+</body>
+</html>
