@@ -1,0 +1,97 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(102, 179, 182);
+    color: white;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: none; 
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s; 
+}
+
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour les écrans plus petits (moins de 600px) */
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: block; /* Affiché sur les écrans plus petits */
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(41, 79, 81);
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+
+@font-face {
+	font-family: 'Cyberpunk';
+	src: url(fonts/Cyberpunk.ttf);
+}
+
+@font-face {
+	font-family: 'Glitch';
+	src: url(fonts/GlitchGoblin-2O87v.ttf);
+}
+
+
+body {
+    background-color: rgb(250,244,2);
+}
+
+header{
+    font-family: 'Cyberpunk', sans-serif;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size : 20px;
+}
+
+.txt {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Glitch', sans-serif;
+    text-align: center; 
+    color:rgb(250,244,2);
+    font-size : 40px;
+    min-height: 30vh;
+}
